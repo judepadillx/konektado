@@ -189,9 +189,10 @@ em {
     align-self: center;
     height: 15rem;
     width: 10rem;
+    position: relative;
 }
 
-#koneksyon-katawan img {
+#koneksyon-katawan > div > img {
     width: 100%;
     object-fit: cover;
 }
@@ -470,7 +471,7 @@ width: max-content;
     bottom: 0;
     top: 0;
     background-color: var(--black-50);
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -482,7 +483,6 @@ width: max-content;
     padding: 2rem;
     backdrop-filter: blur(50px);
     border-radius: 1rem;
-    scale: 0;
 }
 
 #modal p, li, ol {
@@ -534,4 +534,41 @@ hr {
 
 #naiintindihan {
     margin: 0 auto;
+}
+
+.magnify {
+    position: absolute;
+    background-color: var(--black-50);
+    border:  0.125rem solid var(--gray-50);
+    bottom: 0.5rem;
+    right: 0.5rem;
+    width: 2rem !important;
+    height: 2rem !important;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25rem;
+    backdrop-filter: blur(2px);
+}
+
+.magnify img {
+    width: 1rem;
+}
+
+a::after {
+    background-image: url(assets/new-tab.png);
+     background-size: 1rem 1rem;
+    display: inline-block;
+    width: 1rem; 
+    height: 1rem;
+    content:"";
+    margin-left: 0.5ch;
+    position: absolute;
+    opacity: 0;
+    transition-duration: 0.25s;
+}
+
+a:hover::after {
+    opacity: 1;
 }
