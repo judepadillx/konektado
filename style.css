@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --black: rgb(15,15,13);
+    --white: rgb(254, 254, 253);
+    --gray: rgb(51,51,49);
+    --yellow: rgb(255, 214, 10);
+    --green: rgb(48, 209, 88);
+    --blue: rgb(10, 132, 255);
+    --purple: rgb(191, 90, 242);
+    --pink: rgb(255, 55, 95);
+    
+    --white-05: rgba(254, 254, 252, 0.05);
+    --white-10: rgba(254, 254, 252, 0.15);
+    --white-15: rgba(254, 254, 252, 0.15);
+    --black-50: rgba(15,15,13, 0.5);
+    --gray-50: rgba(138, 138, 143, 0.20);
+    --yellow-10: rgba(255, 214, 10, 0.10);
+    --yellow-20: rgba(255, 214, 10, 0.20);
+    --green-10: rgba(052, 199, 89, 0.10);
+    --green-20: rgba(052, 199, 89, 0.20);
+    --blue-10: rgba(10, 132, 255, 0.10);
+    --blue-20: rgba(10, 132, 255, 0.20);
+    --purple-10: rgba(191, 90, 242, 0.10);
+    --purple-20: rgba(191, 90, 242, 0.20);
+    --gray-50: rgba(51,51,49, 0.5);
+    --pink-50: rgb(255, 55, 95, 0.5);
+}
+
+* {
+    color: var(--white);
+    font-family: "Inter", sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    background-color: none;
+    transition: 0.5s;
+}
+
+html {
+    background-color: var(--black);
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    color: var(--black);
+    display: inline-block;
+    width: min-content;
+}
+
+button:disabled {
+    opacity: 0.5;
+}
+
+button:active {
+    outline: none;
+}
+
+p, p i {
+    font-family: "Cormorant Garamond", serif !important;
+    font-size: 1.125rem;
+}
+
+header {
+    text-align: center;
+    margin: 5rem 5rem 0 5rem;
+}
+
+main {
+    max-width: 1152px;
+    margin: 4rem auto;
+    text-align: center;
+    padding: 0 5rem;
+}
+
+footer {
+    background-color: var(--white-05);
+    padding: 5rem;
+    margin-top: 5rem;
+}
+
+#footer-body {
+    max-width: 1152px;
+    margin: auto;
+}
+
+#copyright {
+    text-align: center;
+    font-family: 'Inter', sans-serif !important;
+    margin: 5rem auto 0 auto;
+    font-size: 1rem;
+}
+
+#sanaysay {
+    padding: 0 5rem;
+}
+
+#sanaysay-katawan {
+    background-color: var(--white-05);
+    max-width: 75ch;
+    margin: auto;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+}
+
+#sanaysay-katawan em {
+    font-size: 0.98rem;
+}
+
+#pinagkunan-katawan {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    margin: 0 auto;
+}
+
+#pinagkunan-katawan > div {
+    display: inline-block;
+}
+
+h1, h2 {
+    font-family: "Inter", sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.125rem;
+    /* text-transform: uppercase; */
+    font-weight: 600;
+}
+
+em {
+    font-style: normal;
+}
+
+#action-bar{
+    padding: 2rem 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#paano {
+    background-color: transparent;
+    border: none;
+}
+
+#paano img {
+    width: 1.875rem;
+    height: 1.875rem;
+}
+
+#koneksyon {
+    width: min-content;
+    margin: 0 auto;
+}
+
+#koneksyon-katawan {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    align-items: center;
+}
+
+#koneksyon-katawan > div {
+    text-align: center;
+    display: flex;
+    border: solid 0.5rem var(--white-05);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: 0.25s;
+    align-self: center;
+    height: 15rem;
+    width: 10rem;
+}
+
+#koneksyon-katawan img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+#sagot {
+    display: none;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+#sagot > div {
+    width: min-content;
+    padding: 0.5rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
+#ibahagi {
+    align-self: center;
+    width: auto;
+}
+
+.litrato {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    width: min-content;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.litrato > div {
+    text-align: center;
+    overflow: hidden;
+    transition: 0.25s;
+    display: inline-flex;
+    align-self: flex-start;
+    height: 15rem;
+    width: 10rem;
+}
+
+.litrato img {
+    width: 100%;
+    object-fit: cover;
+    filter: saturate(0) !important;
+}
+
+.tema h2 {
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+#grupo1 h2 {
+    color: var(--yellow);    
+}
+
+#grupo2 h2 {
+    color: var(--green);    
+}
+
+#grupo3 h2 {
+    color: var(--blue);    
+}
+
+#grupo4 h2 {
+    color: var(--purple);    
+}
+
+#grupo1 {
+    background-color: var(--yellow-20);
+}
+
+#grupo2 {
+    background-color: var(--green-20);
+}
+
+
+#grupo3 {
+    background-color: var(--blue-20);
+}
+
+#grupo4 {
+    background-color: var(--purple-20);
+}
+
+.show_group {
+    display: block !important;
+}
+
+.show_sagot {
+    display: flex !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.shake {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+}
+
+#notif {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    height: 0;
+    margin-top: -2rem;
+    z-index: 1;
+}
+
+#notif-text {
+    background-color: var(--gray-50);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(50px);
+    z-index: 1;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 0.875rem;
+    
+}
+
+/* #sagot > div > .images {
+background-color: transparent;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+padding: 0;
+margin: 0 !important;
+gap: 1rem;
+} */
+
+/* #sagot > div > .category {
+position: absolute;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+width: max-content;
+} */
+
+.select {
+    border: solid 0.5rem var(--white-15) !important;
+}
+
+
+/* .div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 1 / 3 / 2 / 4; }
+.div4 { grid-area: 1 / 4 / 2 / 5; }
+.div5 { grid-area: 2 / 1 / 3 / 2; }
+.div6 { grid-area: 2 / 2 / 3 / 3; }
+.div7 { grid-area: 2 / 3 / 3 / 4; }
+.div8 { grid-area: 2 / 4 / 3 / 5; }
+.div9 { grid-area: 3 / 1 / 4 / 2; }
+.div10 { grid-area: 3 / 2 / 4 / 3; }
+.div11 { grid-area: 3 / 3 / 4 / 4; }
+.div12 { grid-area: 3 / 4 / 4 / 5; }
+.div13 { grid-area: 4 / 1 / 5 / 2; }
+.div14 { grid-area: 4 / 2 / 5 / 3; }
+.div15 { grid-area: 4 / 3 / 5 / 4; }
+.div16 { grid-area: 4 / 4 / 5 / 5; } */
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@media only screen and (max-width: 900px) {
+    #koneksyon-katawan > div {
+        height: 10rem;
+        width: 6.6rem;
+    }
+    
+    .litrato > div {
+        height: 10rem;
+        width: 6.6rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {    
+    #koneksyon-katawan {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .litrato {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    #pinagkunan-katawan {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    #koneksyon-katawan > div {
+        height: 15rem;
+        width: 10rem;
+    }
+    
+    .litrato > div {
+        height: 15rem;
+        width: 10rem;
+    }
+    
+
+    
+}
+
+@media only screen and (max-width: 560px) {
+    header {
+        margin: 5rem 2rem 0 2rem;
+    }
+    
+    main {
+        padding: 0 1rem;
+    }
+    
+    #sanaysay {
+        padding: 0;
+    }
+    
+    #sanaysay-katawan {
+        border-radius: 0;
+        padding: 3rem 2rem;
+        background-color: transparent;
+    }
+    
+    #koneksyon-katawan {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    #koneksyon-katawan > div {
+        height: 8rem;
+        width: 5.3rem;
+    }
+    
+    .litrato > div {
+        height: 8rem;
+        width: 5.3rem;
+    }
+    
+    #pinagkunan-katawan {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    #copyright {
+        width: 20ch;
+    }
+}
+
+#modal-background {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: var(--black-50);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal {
+    background-color: var(--gray-50);
+    border: solid 0.125 var(--white-15);
+    max-width: 24rem;
+    padding: 2rem;
+    backdrop-filter: blur(50px);
+    border-radius: 1rem;
+    scale: 0;
+}
+
+#modal p, li, ol {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+#modal p {
+    margin: 1rem 0;
+}
+
+#illustration {
+    border: solid 0.0625rem var(--white-15);
+    border-radius: 1rem;
+}
+
+#illustration ol {
+    margin: 0.25rem;
+    background-color: var(--white-05);
+    padding: 0.75rem 0.75rem 0.75rem 3ch;
+    border-radius: 0.75rem;
+}
+
+#illustration div {
+    margin: 0.25rem;
+    background-color: var(--white-05);
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+}
+
+#illustration div p {
+    margin: 0;
+    text-align: center;
+}
+
+hr {
+    margin: 1rem 2rem;
+    border: none;
+    height: 0.0165rem;
+    background-color: var(--white);
+}
+
+#naiintindihan-nav {
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+#naiintindihan {
+    margin: 0 auto;
+}

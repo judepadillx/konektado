@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css?version=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Konektado</title>
+</head>
+<template>
+    <div id="grupo1">
+        <div class="tema">
+            <h2>Piksyon hango sa Politika</h2>
+        </div>
+        <div class="litrato">
+            <div>
+                <img src="assets/fahrenheit.jpg">
+            </div>
+            <div>
+                <img src="assets/balota.jpg">
+            </div>
+            <div>
+                <img src="assets/hunger_games.jpg">
+            </div>
+            <div>
+                <img src="assets/parasite.jpg">
+            </div>
+        </div>
+    </div>
+    <div id="grupo2">
+        <div class="tema">
+            <h2>Propaganda ng mga Namamahala</h2>
+        </div>
+        <div class="litrato">
+            <div>
+                <img src="assets/my_autobiography.jpg">
+            </div>
+            <div>
+                <img src="assets/mein_kampf.jpg">
+            </div>
+            <div>
+                <img src="assets/north_korea.webp">
+            </div>
+            <div>
+                <img src="assets/forbiden_book.jpg">
+            </div>
+        </div>
+    </div>
+    <div id="grupo3">
+        <div class="tema">
+            <h2>Naratibo ng mga Biktima</h2>
+        </div>
+        <div class="litrato">
+            <div>
+                <img src="assets/anne_frank.jpg">
+            </div>
+            <div>
+                <img src="assets/conjugal.jpg">
+            </div>
+            <div>
+                <img src="assets/some_people.jpg">
+            </div>
+            <div>
+                <img src="assets/paris.jpg">
+            </div>
+        </div>
+    </div>
+    <div id="grupo4">
+        <div class="tema">
+            <h2>Gumagamit ng Inobasyon mula sa Giyera</h2>
+        </div>
+        <div class="litrato">
+            <div>
+                <img src="assets/mac.jpg">
+            </div>
+            <div>
+                <img src="assets/microwave.jpg">
+            </div>
+            <div>
+                <img src="assets/jeep.jpg">
+            </div>
+            <div>
+                <img src="assets/duct_tape.webp">
+            </div>
+        </div>
+    </div>
+    <button id="ibahagi">Ibahagi ang Resulta</button>
+</template>
+<body>
+    <header>
+        <h1>Konektado</h1>
+        <p>Hango sa <i>Connections</i> ng <i>New York Times</i>.</p>
+    </header>
+    <div id="notif">
+        <p id="notif-text"></p>
+    </div>
+    <main>
+        <div id="sagot">
+        </div>
+        <div id="koneksyon">
+            <div id="action-bar">
+                <button id="paano"><img src="assets/paano.png"></button>
+                <button id="ipasa" disabled>Ipasa</button>
+            </div>
+            <div id="koneksyon-katawan">
+                <div data-group="3">
+                    <img src="assets/paris.jpg">
+                    <div class="tool">
+                        
+                    </div>
+                </div>
+                <div data-group="3">
+                    <img src="assets/anne_frank.jpg">
+                </div>
+                <div data-group="3">
+                    <img src="assets/some_people.jpg">
+                </div>
+                <div data-group="4">
+                    <img src="assets/mac.jpg">
+                </div>
+                <div data-group="1">
+                    <img src="assets/fahrenheit.jpg">
+                </div>
+                <div data-group="2">
+                    <img src="assets/north_korea.webp">
+                </div>
+                <div data-group="4">
+                    <img src="assets/duct_tape.webp">
+                </div>
+                <div data-group="1">
+                    <img src="assets/parasite.jpg">
+                </div>
+                <div data-group="1">
+                    <img src="assets/balota.jpg">
+                </div>
+                <div data-group="2">
+                    <img src="assets/my_autobiography.jpg">
+                </div>
+                <div data-group="3">
+                    <img src="assets/conjugal.jpg">
+                </div>
+                <div data-group="4">
+                    <img src="assets/microwave.jpg">
+                </div>
+                <div data-group="2">
+                    <img src="assets/forbiden_book.jpg">
+                </div>
+                <div data-group="4">
+                    <img src="assets/jeep.jpg">
+                </div>
+                <div data-group="1">
+                    <img src="assets/hunger_games.jpg">
+                </div>
+                <div data-group="2">
+                    <img src="assets/mein_kampf.jpg">
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <div id="sanaysay">
+        <div id="sanaysay-katawan">
+            <h2>Tala ng Tagtustos</h2>
+            <p>&emsp;&emsp;Konektado ang lahat ng bagay. Minsan madali lang malaman, kadalasan kailangan mo pang ayusin ang buhol-buhol na lubid ng ugnayan para lang mahanap ang wakas. Minsan ang dulo ay siya rin palang simula. Pero kadalasan kailangan mo pang bumalik sa nakaraan para lang malaman paano namunga. Minsan madali lang sundan, pero kadalasan kailangan mo pang dumaan sa butas ng karayom, dahil imbis na ordinaryong lubid ang ginamit, isang napakahabang hibla ng sinulid na kulang na lang ay maduling o ‘di naman kaya’y mabulag nang tuluyan.</p>
+            <p>&emsp;&emsp;Minsan mas madaling hayaan na lamang nating nakatali, nakabalandra, at buhol-buhol ang mga ugnayan natin sa lahat ng bagay at aspeto ng buhay. Pero paano ang mga ibang pinipilipit at naiipit sa mga lubid na hindi naman nila ginustong nakagapos sa kanilang pagkatao? Sino nga ba ang may kapangyarihang humabi ng mga lubid ng ating kapalaran? Ang mismong sarili o ang makapangyarihan?</p>
+            <p>&emsp;&emsp;Ang <em>Konektado</em> ay isang sining na pagsasapiling o <i>curated exhibit</i> na sumasaliksik sa masalimuot na pagkakaugnay ng politika at buhay, na inihahayag sa pamamagitan ng labing-anim na piling likhang-sining. Sa paghahabi ng ugnayan, ang mambubuo ay hinahamon nito na kalasin ang madalas na hindi nakikitang mga hibla ng impluwensyang politikal—mga hiblang humuhubog sa pagkakakilanlan, kapangyarihan, at kaayusang panlipunan. Bagaman may mga ugnayang madaling makita, higit na marami ang nangangailangan ng malalim na pagninilay at tapang upang matuklasan ang katotohanan.</p>
+            <p>&emsp;&emsp;Sa pamamagitan ng sining, nasisilayan natin ang patuloy na tensyon sa pagitan ng kapangyarihan at kawalang-kapangyarihan, at ang mga puwersang panlipunang humuhubog kung kaninong tadhana ang hinahabi at para kanino isinusulong.</p>
+        </div>
+    </div>
+    <footer>
+        <div id="footer-body">
+            <div id="pinagkunan">
+                <div id="pinagkunan-katawan">
+                    <div>
+                        <a target="_blank" href="https://www.goodreads.com/book/show/61812425-paris">Paris: The Memoir</a>
+                        <p>Libro ni Paris Hilton</p>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://www.goodreads.com/book/show/127441416-the-diary-of-a-young-girl">The Diary of a Young Girl</a>
+                        <p>Libro ni Anne Frank</p>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://www.goodreads.com/book/show/124961437-some-people-need-killing">Some People Need Killing: A Memoir of Murder in My Country</a>
+                        <p>Patricia Evangelista</p>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://www.goodreads.com/book/show/124961437-some-people-need-killing">Steve Jobs and Macintosh Computer</a>
+                        <p>Litrato ni Bernard Gotfryd</p>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://www.goodreads.com/book/show/13079982-fahrenheit-451">Fahrenheit 451</a>
+                        <p>Libro ni Ray Bradbury</p>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://www.vox.com/2016/1/6/10724334/north-korea-history">Pyongyang Propaganda Poster</a>
+                        <p>Litrato ni Eric Lafforgue</p>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://www.vogue.com/article/the-120000-art-basel-banana-explained-maurizio-cattelan">Comedian</a>
+                        <p>Iskultura ni Maurizio Cattelan<br>Litrato ni Rhona Wise</p>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://letterboxd.com/film/parasite-2019/">Parasite</a>
+                        <p>Sa Direksyon ni Bong Joon Ho</p>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://letterboxd.com/film/ballot/">Balota</a>
+                        <p>Sa Direksyon ni Kip Oebanda</p>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://www.goodreads.com/book/show/3450082-my-autobiography">My Autobiography</a>
+                        <p>Libro ni Benito Mussolini</p>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://www.goodreads.com/book/show/11027756-the-conjugal-dictatorship-of-ferdinand-and-imelda-marcos?ref=nav_sb_ss_1_22">The Conjugal Dictatorship of Ferdinand and Imelda Marcos</a>
+                        <p>Libro ni Primitivo Mijares</p>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://microwaveexpert.wordpress.com/2014/11/06/microwave-technologies-association/">Microwave Oven Showcase</a>
+                        <p>Mula sa Science Museum, London</p>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://www.flickr.com/photos/johntewell/4770971771">Jeepney</a>
+                        <p>Litrato ni John Tewell</p>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://americainclass.org/wp-content/uploads/2012/05/ForbiddenBook.pdf">If they'll only be good</a>
+                        <p>Guhit-larawa ni Samuel Ehrhart</p>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://www.goodreads.com/book/show/2767052-the-hunger-games">The Hunger Games</a>
+                        <p>Libro ni Suzanne Collins</p>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://www.goodreads.com/book/show/6562917-mein-kampf">Mein Kampf</a>
+                        <p>Libro ni Adolf Hitler</p>
+                    </div>
+                </div>
+                
+            </div>
+            <p id="copyright">Pagsasapiling ni <em>Jude Gabriel M. Padilla</em></p>
+        </div>
+    </footer>
+    <div id="modal-background">
+        <div id="modal">
+            <h2>Tuntunin</h2>
+            <p>Mula sa labing-anim na likhang sining, bumuo ng apat na pangkat na may tig-a-apat nito. Ang bawat pangkat ay may sadyang tema na kinakatawan ng apat na sining lamang.</p>
+            <div id="illustration">
+                <ol>
+                    <li>Pumili ng apat na likhang sining.</li>
+                    <li>Pindutin ang "ipasa" upang malaman kung tama ang iyong hula.</li>
+                </ol>
+            </div>
+            <p>Ang antas ng hirap ng bawat tema ay matutunghayan sa pagbuo ng palaisipan.</p>
+            <div id="illustration">
+                <div>
+                    <p>🟨🟩🟦🟪</p>
+                    <p>Madali -> Mahirap</p>
+                </div>
+            </div>
+            <div id="naiintindihan-nav">
+                <button id="naiintindihan">Naiintindihan</button>
+            </div>
+        </div>
+    </div>
+    <!-- TO DO:
+    [] Hint
+    [] Rules 
+    -->
+    
+    <script src="main.js?version=1"></script>
+</body>
+</html>
