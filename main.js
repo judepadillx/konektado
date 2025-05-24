@@ -20,7 +20,7 @@ var modalBackground = document.getElementById("modal-background");
 var modal = document.getElementById("modal");
 var paano = document.getElementById("paano");
 
-var textToShare = "Konektado\nhttps://judepadillx.github.io/konektado/";
+var textToShare = "Konektado\n";
 
 function shuffle() {
 }
